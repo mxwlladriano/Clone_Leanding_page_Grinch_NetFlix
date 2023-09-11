@@ -1,0 +1,28 @@
+.hook{
+    padding: 25px 5vw;
+    background: none;
+    text-align: center;
+    top: -5;
+    z-index: 5;
+    max-width: 1600px;
+    position: relative;
+
+    &__text{
+        padding: 28px;
+        border-top: 0.1px solid;
+        border-bottom: 0.1px solid;
+
+        @media (max-width: 768px){
+            padding-left: 0;
+    }
+        
+        &__p{
+            margin: 0 auto;
+            max-width: 500px;
+
+            @media (max-width: 768px){
+                text-align: left;
+        }
+        }
+    }
+}

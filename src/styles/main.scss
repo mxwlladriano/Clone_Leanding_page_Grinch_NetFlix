@@ -1,6 +1,169 @@
-$bgColor: rgb(0, 255, 17);
+@use 'header';
+@use 'hero';
+@use 'hook';
+@use 'detalhes';
+@use 'movies';
+@use 'coming-soon';
+@use 'footer';
 
+@font-face{
+    font-family: Netflix Sans;
+    src: url(../../assets/fonts/NetflixSansRegular.ttf);
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: Netflix Sans;
+    src: url(../../assets/fonts/NetflixSansBold.ttf);
+    font-weight: 700;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+$corDeFundo: #181818;
+$corTextoPrincipal: #fff;
+$corTextoSegundario: #a3a3a3;
+$corTextoTerceiro: #737373;
 
 body{
-    background-color: $bgColor;
+    background-color: $corDeFundo;
+    color: $corTextoPrincipal;
+    font-family: Netflix Sans, sans-serif;
 }
+
+@mixin text($fontSize: 14px){
+    font-size: $fontSize;
+    line-height: $fontSize + 4px;
+    color: $corTextoPrincipal;
+}
+
+@mixin text-info($fontSize: 14px){
+    font-size: $fontSize;
+    line-height: $fontSize + 4px;
+    color: $corTextoSegundario;
+}
+
+@mixin text-sinopse($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 6px;
+    color: $corTextoPrincipal;
+}
+
+@mixin text-estrelado($fontSize: 16px){
+    font-size: $fontSize;
+    line-height: $fontSize + 6px;
+    color: $corTextoSegundario;
+}
+
+.text-estrelado{
+    @include text-estrelado;
+
+    @media (max-width: 768px){
+            font-size: 14px;
+    }
+}
+
+
+.text-sinopse{
+    @include text-sinopse;
+
+    @media (max-width: 768px){
+        font-size: 14px;
+      }
+}
+
+.text-info{
+    @include text-info;
+}
+
+.text--Sbig{
+    @include text(30px)
+ 
+}
+
+.text--big{
+    @include text(16px);
+}
+
+.text{
+    @include text;
+}
+
+.text--small{
+    @include text(13px);
+}
+
+.link-text-primary{
+    @include text(16px);
+    color: $corTextoPrincipal;
+}
+
+.link-text-secondarium{
+    @include text(13px);
+    color: $corTextoTerceiro;
+}
+
+.title{
+    @include text;
+}
+
+
+.button{
+    padding: 9px 20px;
+    background-color: #db0510; 
+    border: transparent;
+    color: #fff;
+    cursor: pointer;
+
+    &:hover{
+        background-color: #e50914;
+    }
+
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+        padding: 9px 12px;
+        line-height: 15px;
+        min-height: 0;
+        margin: 0 0 0 8px;
+    }
+}
+
+.button2{
+    margin: 5px 25px 5px 1em;
+    white-space: nowrap;
+    font-size: 13px;
+    line-height: 15px;
+    min-height: auto;
+    padding: 9px 20px;
+    background-color: #e50914;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    font: inherit;
+
+    &:hover{
+        background-color: #e50914;
+    }
+
+
+    @media (max-width: 768px) {
+        font-size: 13px;
+        line-height: 15px;
+        margin: .8em 0 0;
+        min-height: auto;
+        padding: 9px 20px;
+        width: auto;
+    }
+}
+
+.btn{
+    margin: 0 8px;
+    border-radius: 2px;
+}
+

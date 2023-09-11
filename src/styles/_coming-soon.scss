@@ -1,0 +1,84 @@
+.coming-soon{
+    background: #181818;
+    margin: 0 auto;
+    max-width: 1600px;
+    padding: 25px 5vw;
+    position: relative;
+
+    @media (max-width: 768px){
+        padding: 5px 5vw 20px;
+    }
+
+    &__h2{
+        color: #fff;
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 34px;
+        display: inline-block;
+        margin-left: 16px;
+
+        @media (max-width: 768px){
+            color: #fff;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 24px;
+            margin-bottom: 5px;
+            margin-top: 5px;
+            margin-left: 0;
+        }
+    }
+
+    &__container{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @media (max-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr;
+        }
+        
+
+        &__link{
+            text-decoration: none;
+            margin: 18px;
+
+            @media (max-width: 768px){
+                margin: 4px;
+            }
+
+            &__title{
+                font-weight: 400;
+                text-decoration: none;
+
+                &:hover{
+                    text-decoration: underline;
+                }
+    
+    
+                &__sinopse{
+                    font-weight: 400;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+
+    &__tudum{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        padding-top: 30px;
+        margin-left: 16px;
+
+        @media (max-width: 768px){
+            display: grid;
+            grid-template-columns: 1fr;
+            margin-left: 0;
+        }
+
+        &__p{
+            font-weight: 400;
+            
+        }
+    }
+}

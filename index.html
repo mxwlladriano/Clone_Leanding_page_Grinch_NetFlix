@@ -1,12 +1,266 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html class="trava" lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone landing page Grinch</title>
     <link rel="stylesheet" href="./dist/css/main.css">
+    <link rel="stylesheet" href="./main.js">
 </head>
 <body>
-    <h1>Olá</h1>
+    <header>
+        <div class="header">
+            <div class="header__img">
+                <img src="./dist/images/logo_icon/logo_netflix.PNG" alt="NetFlix">
+            </div>
+            <div class="header__descr">
+                <p>SÉRIES E FILMES ILIMITADOS</p>
+            </div>
+            <div class="header__button">
+                <button type="button" class="button btn">ASSINE A NETFLIX</button>
+                <a class="header__descr__button" href="#">Entrar</a>
+            </div>
+        </div>
+    </header>
+    <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__container__info">
+                        <div class="hero__container__info__logo">
+                            <img class="hero__container__info__logo__img" src="./dist/images/hero/illumination_presents_grinch.png" alt="illumination presents grinch">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero__detalhes">
+                    <div class="hero__detalhes__titleInfo">
+                        <h1 class="hero__detalhes__titleInfo__title">O Grinch</h1>
+                        <div class="hero__detalhes__titleInfo__title__data text-info">
+                            <span class="hero__detalhes__titleInfo__title__data">2018</span>
+                            <span class="hero__detalhes__titleInfo__title__data__spacer">|</span>
+                            <span class="hero__detalhes__titleInfo__title__data__spacer__number">L</span>
+                            <span class="hero__detalhes__titleInfo__title__data__spacer">|</span>
+                            <span>1h 25min</span>
+                            <span class="hero__detalhes__titleInfo__title__data__spacer">|</span>
+                            <a class="hero__detalhes__titleInfo__title__data__spacer__number__genero text-info" href="https://www.netflix.com/br/browse/genre/637980">Crianças</a>
+                        </div>
+                        <div class="hero__sinopse">
+                            <p class="hero__sinopse__text text-sinopse">
+                                Uma criatura ranzinza quer acabar com o Natal de uma alegre cidade. Mas uma garotinha sabe o caminho para conquistar seu coração.
+                            </p>
+                        </div>
+                        <div class="hero__talento">
+                             <span class="hero__talento__estrelado text-estrelado">Estrelando:</span>
+                             <span class="text-sinopse"> 
+                                Benedict Cumberbatch,Cameron Seely,Rashida Jones
+                             </span>
+                        </div>
+                    </div>
+                    <div class="hero__content">
+                        <div class="hero__content__image-desktop"></div>
+                    </div>
+                </div>
+               <div class="hero__rodape-hero">
+                <img class="hero__rodape-hero__img" src="./dist/images/logo_icon/icon_netflix.PNG" alt="Net Flix">
+                <div class="mobile hero__rodape-hero__item">
+                    <p class="mobile hero__rodape-hero__item__descr">Assista o quanto quiser.</p>
+                
+                    <button type="button" class="button2 btn2">ASSINE A NETFLIX</button>
+                </div>
+               </div>
+    </section>
+    <section class="hook">
+        <div class="hook__text">
+            <p class="hook__text__p text-estrelado">O ator indicado ao Oscar Benedict Cumberbatch empresta sua voz para esta versão do famoso clássico natalino.</p>
+        </div>
+    </section>
+    <section class="detalhes">
+        <h2 class="detalhes__h2">Mais detalhes</h2>
+        <div class="detalhes__more">
+            <div class="detalhes__more__descr">
+                <p class="detalhes__more__descr__p1 text-estrelado">Assista offline</p>
+                <p class="detalhes__more__descr__p1__p2 text-sinopse">Downloads disponíveis somente em planos sem anúncios.</p>
+            </div>
+            <div class="detalhes__more__descr">
+                <p class="detalhes__more__descr__p1 text-estrelado">Gêneros</p>
+                <p class="detalhes__more__descr__p1__p2 text-sinopse"><a class="underline text-sinopse" href="#">Filmes para a família</a>,<a class="underline text-sinopse" href="#">Filmes para toda a família</a>,Filmes baseados em peças de teatro,<a class="underline text-sinopse" href="#">Filmes de comédia,</a><a class="underline text-sinopse" href="#">Filmes baseados em livros</a></p>
+            </div>
+            <div class="detalhes__more__descr">
+                <p class="detalhes__more__descr__p1 text-estrelado">Este filme é...</p>
+                <p class="detalhes__more__descr__p1__p2 text-sinopse">Besteirol</p>
+            </div>
+            <div class="detalhes__more__descr">
+                <p class="detalhes__more__descr__p1 text-estrelado">Idioma</p>
+                <p class="detalhes__more__descr__p1__p2 text-sinopse">German,English - Audio Description,English [Original],French,Italian,Brazilian Portuguese</p>
+            </div>
+            <div class="detalhes__more__descr">
+                <p class="detalhes__more__descr__p1 text-estrelado">Legendas</p>
+                <p class="detalhes__more__descr__p1__p2 text-sinopse">German,English,French,Italian,Brazilian Portuguese</p>
+            </div>
+        </div>
+        <div class="detalhes__more__elenco">
+            <p class="detalhes__more__elenco__0 text-estrelado">Elenco</p>
+            <div class="detalhes__more__elenco__1">
+                <p class="text-sinopse detalhes__more__elenco__1__2">Benedict Cumberbatch</p>
+                <p class="text-sinopse detalhes__more__elenco__1__2">Pharrell Williams</p>
+                <p class="text-sinopse detalhes__more__elenco__1__2">Cameron Seely</p>
+                <p class="text-sinopse detalhes__more__elenco__1__2">Kenan Thompson</p>
+                <p class="text-sinopse detalhes__more__elenco__1__2">Rashida Jones</p>
+                <p class="text-sinopse detalhes__more__elenco__1__2">Angela Lansbury</p>
+
+            </div>
+        </div>
+    </section>
+    <section class="title">
+        <h2 class="title__h2">Títulos semelhantes</h2>
+        <div class="title__movies">
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal.jpg" alt="Cronicas de Natal">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal_Parte_Dois.jpg" alt="Cronicas de Natal 2">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal.jpg" alt="Cronicas de Natal">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal_Parte_Dois.jpg" alt="Cronicas de Natal 2">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal.jpg" alt="Cronicas de Natal">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Cronicas_de_Natal_Parte_Dois.jpg" alt="Cronicas de Natal 2">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+            <a href="#">
+                <img class="title__movies__templates" src="./dist/images/titulos_semelhantes/Ovos_Verdes_e_Presunto.jpg" alt="Ovos verdes e presunto">
+            </a>
+        </div>
+    </section>
+    <section class="coming-soon">
+        <h2 class="coming-soon__h2">Em breve</h2>
+        <div class="coming-soon__container">
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Berlim</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Só há duas coisas que podem transformar um dia de cão em um dia perfeito: amor e dinheiro, muito dinheiro.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Sonic 2: O Filme </div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Sonic quer virar um herói, então decide unir forças com Tails para impedir que o Dr. Robotnik e Knuckles ponham as mãos em uma poderosa esmeralda.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Missão Resgate</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Para salvar um grupo de mineiros soterrados, um caminhoneiro embarca em uma perigosa missão sobre o gelo. Afinal de contas, só ele pode levar os equipamentos de resgate.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Avatar: O Último Mestre do Ar</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Água, Terra, Fogo e Ar. Há muito tempo, essas quatro nações viviam em completa harmonia, mas tudo mudou. Uma série live action baseada na história de Aang.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Corpo em Chamas</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Um policial é assassinado e queimado. Os principais suspeitos são a namorada dele e o amante dela. Inspirada em uma história real.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">Depois da Cabana</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Após uma mulher sequestrada escapar do cativeiro, a polícia fica cada vez mais perto de descobrir a verdade sobre um desaparecimento que está há 13 anos sem solução.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">O Tempo Traz Você pra Mim</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">De luto, uma mulher volta magicamente para o ano de 1998 e conhece um homem que se parece muito com o antigo amor de sua vida.</div>
+            </a>
+            <a class="coming-soon__container__link" href="#">
+                <div class="coming-soon__container__link__title text-sinopse">A Série Mestre Pokémon</div>
+                <div class="coming-soon__container__link__title__sinopse text-info">Ash, Pikachu e seus amigos Misty e Brock viajam pelo mundo ajudando outros Pokémons, observados por um guardião nos céus.</div>
+            </a>
+        </div>
+        <div class="coming-soon__tudum">
+            <p class="coming-soon__tudom__p text-info">
+                Conheça os bastidores das séries e filmes da Netflix, confira o que está vindo por aí e assista a vídeos extras em Tudum.com.
+            </p>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__site">
+            <p class="footer__site__top">
+                Dúvidas? Ligue
+                <a class="footer__site__top__tel" href="#">0800 591 2876</a>
+            </p>
+        </div>
+        <ul class="footer__structural">
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Perguntas frequentes</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Central de Ajuda</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Conta</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Media Center</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Relações com investidores</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Carreiras</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Resgatar cartão pré-pago</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Comprar cartão pré-pago</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Formas de assistir</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Termos de Uso</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Privacidade</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Preferências de cookies</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Informações corporativas</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Entre em contato</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Teste de velocidade</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Avisos legais</a>
+            </li>
+            <li class="footer__structural__item">
+                <a class="footer__structural__item__link" href="#">Só na Netflix</a>
+            </li>
+        </ul>
+        <select class="footer__seletor">
+            <option>English</option>
+            <option selected>Português</option>
+        </select>
+        <p class="footer__p">
+            Netflix Brasil
+        </p>
+
+    </footer>
+
 </body>
 </html>
