@@ -141,11 +141,12 @@ body{
     line-height: 15px;
     min-height: auto;
     padding: 9px 20px;
-    background-color: #e50914;
+    background-color: #db0510;
     color: #fff;
     border: 0;
     border-radius: 2px;
     font: inherit;
+    cursor: pointer;
 
     &:hover{
         background-color: #e50914;
